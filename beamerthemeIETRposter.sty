@@ -113,7 +113,10 @@ color(75bp)=(red); color(100bp)=(red)}
     \node at (.54\paperwidth,.025\paperwidth) {\includegraphics[width=.04\paperwidth]{logos/cnrs.png}};
     \node at (.62\paperwidth,.025\paperwidth) {\includegraphics[width=.07\paperwidth]{logos/supelec.jpeg}};
     \node at (.72\paperwidth,.025\paperwidth) {\includegraphics[width=.08\paperwidth]{logos/insa.png}};
+    \begin{scope}[blend mode=difference]
+          % \fill [fill=\c] circle [radius=1.875];
     \node at (.82\paperwidth,.025\paperwidth) {\includegraphics[width=.07\paperwidth]{logos/nantes.png}};
+        \end{scope}
     \node at (.92\paperwidth,.025\paperwidth) {\includegraphics[width=.09\paperwidth]{logos/rennes1.png}};
   \end{tikzpicture}
 }
