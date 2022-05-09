@@ -1,0 +1,145 @@
+% Created 2021-04-28 mer. 10:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+% \usepackage[french]{babel}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{multicol}
+\usepackage{totcount}
+\regtotcounter{section}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{picture}
+\usepackage{bbding}
+\usepackage{bbold}
+\usepackage{sansmathaccent}
+\pdfmapfile{+Sensationsmache.map}
+\usepackage{stmaryrd}
+\usepackage{tikz}
+
+\newcommand\warning[1]{\ifdebug {\color{red}#1}\fi}
+
+\renewcommand
+\maketitle{
+\begin{titlepage}
+
+\end{titlepage}}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{cancel}
+\usepackage{ulem}
+\usetheme{default}
+\author{Author}
+\date{\today}
+\title{The Title}
+\subtitle{The Subtitle}
+\usepackage{beamerthemeIETRposter}
+
+\usepackage{appendixnumberbeamer}
+\usepackage{ amssymb }
+\begin{document}
+
+\maketitle
+
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+\newcommand{\eachsectiononlycurrentsubsections}{\AtBeginSection[]{
+	\begin{frame}
+	\frametitle{\contentsname}
+	%			\linespread{1.3}
+	\tableofcontents[currentsection,sectionstyle=show/hide,subsectionstyle=show/show/hide]
+\end{frame}
+}}
+\eachsectiononlycurrentsubsections
+
+\setbeamertemplate{frametitle continuation}[from second]
+\begin{frame}[allowframebreaks]{\contentsname}
+    \begin{columns}
+    \begin{column}{.45\textwidth}
+      \tableofcontents[subsectionstyle=hide/hide,sections=1-{\numexpr\totvalue{section}/2\relax}]
+    \end{column}
+    \begin{column}{.45\textwidth}
+      \tableofcontents[subsectionstyle=hide/hide,sections={\numexpr\totvalue{section}/2+1\relax}-]
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\setbeamercovered{transparent}
+\newcommand\strikered{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{1pt}{0.4pt}}}\ULon}
+\renewcommand<>{\sout}[1]{\alt#2{\strikered{#1}}{#1}}
+
+
+\section{Introduction}
+\label{sec:org0a46414}
+\begin{frame}[label={sec:org4ebee6e}]{Background}
+\note{Nowadays with the smart paradigm we are surrounded by many large
+scale systems made of interconnected agents One important thing to take into
+account is their reliability. So we can study the reason of its malfunction. In
+order to restablish normal function a correction scheme can be used.}
+\begin{columns}
+\begin{column}{0.48\columnwidth}
+\begin{itemize}
+\item Large Scale Systems (L.S.S)  \pause 
+\begin{itemize}
+\item Smart Buildings
+\item Smart Grids
+\item Swarm Robotics
+\item Autonomous Driving
+\item \ldots{}
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{0.48\columnwidth}
+\begin{center}
+\includegraphics[width=.9\linewidth]{logos/logo_IETR.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\section{The Problem}
+\label{sec:org925c16c}
+\begin{frame}[label={sec:orge1ce75b}]{Large Scale Systems}
+\note{The prolemb with Large Scale Systems when compared to smaller systems is quantity of agents that interact ...}
+\begin{itemize}
+\item Multiple Agents
+\item Not necessarily same control approach for each agent
+\item Interaction between such agents
+\item ``Unpredictable'' Dynamics (or difficult to model)
+\item \ldots{}
+\end{itemize}
+\end{frame}
+\appendix
+\section{Supplement}
+\begin{frame}[label={sec:orge1ce75b}]{Large Scale Systems}
+\note{The prolemb with Large Scale Systems when compared to smaller systems is quantity of agents that interact ...}
+\begin{itemize}
+\item Multiple Agents
+\item Not necessarily same control approach for each agent
+\item Interaction between such agents
+\item ``Unpredictable'' Dynamics (or difficult to model)
+\item \ldots{}
+\end{itemize}
+\end{frame}
+\end{document}
