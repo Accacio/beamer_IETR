@@ -15,8 +15,9 @@
 
 % custom colors
 \definecolor{ietr_darkblue}{RGB}{9, 40, 94}
-\definecolor{ietr_medianblue}{RGB}{54, 91, 161}
-\definecolor{ietr_brightblue}{RGB}{180, 217, 243}
+\definecolor{ietr_medianblue}{RGB}{9.7896 66.686 125.06}
+\definecolor{ietr_brightblue}{RGB}{54, 91, 161}
+\definecolor{ietr_brighterblue}{RGB}{180, 217, 243}
 \definecolor{i6blue}{cmyk}{1,0.305,0,0.06}
 \definecolor{i6bluedark}{rgb}{0.0156,0.2578,0.5625}
 \definecolor{i6colorscheme1}{HTML}{FF6518}  % e.g. for block title
@@ -57,9 +58,10 @@
 \setbeamercolor{alerted text}{fg=i6colorscheme1}
 
 \setbeamertemplate{itemize items}[triangle]
-\setbeamercolor*{itemize item}{fg=ietr_brightblue}
+\setbeamercolor*{item}{fg=ietr_brightblue}
+\setbeamercolor*{caption name}{fg=ietr_darkblue}
 \setbeamertemplate{navigation symbols}{}  % no navigation on a poster
-% \usefonttheme{serif}
+\usefonttheme[onlymath]{serif}
 
 \newcommand{\insertemail}{}
 \newcommand{\email}[1]{%
